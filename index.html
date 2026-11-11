@@ -62,6 +62,12 @@
       text-rendering: optimizeLegibility;
     }
 
+    /* Tailwind preflight equivalents used by the Lovable build */
+    img, svg { display: block; max-width: 100%; }
+    img { height: auto; }
+    h1, h2, h3, p, figure, ul { margin: 0; }
+    button, input { font: inherit; color: inherit; }
+
     ::selection {
       color: var(--primary-foreground);
       background: var(--primary);
@@ -141,12 +147,12 @@
 
     .intro-section {
       position: relative;
-      min-height: 605px;
+      min-height: 580px;
       display: grid;
-      grid-template-columns: 0.93fr 1.07fr;
-      gap: clamp(38px, 7vw, 103px);
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(28px, 5vw, 64px);
       align-items: center;
-      padding-block: 68px 82px;
+      padding-block: 60px 75px;
     }
 
     .intro-copy {
@@ -176,8 +182,7 @@
     }
 
     .intro-copy h1,
-    .section-heading h2,
-    .contact-inner h2 {
+    .section-heading h2 {
       margin: 0;
       color: var(--ink);
       font-family: var(--font-editorial);
@@ -186,7 +191,7 @@
     }
 
     .intro-copy h1 {
-      font-size: clamp(83px, 9vw, 132px);
+      font-size: clamp(80px, 8.5vw, 124px);
       line-height: 0.77;
     }
 
@@ -197,12 +202,12 @@
     .intro-rule {
       width: 54px;
       height: 2px;
-      margin-block: 33px 23px;
+      margin-block: 28px 20px;
       background: var(--signal);
     }
 
     .intro-lede {
-      max-width: 375px;
+      max-width: 420px;
       margin: 0;
       color: var(--ink-soft);
       font-family: var(--font-editorial);
@@ -222,12 +227,61 @@
       font-weight: 400;
     }
 
+    /* Prominent vertically stacked publication & portfolio links beside intro */
+    .intro-stack-links {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 24px;
+      max-width: 360px;
+    }
+
+    .stack-link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 13px;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      background: var(--card);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .stack-link-item:hover {
+      border-color: var(--signal);
+      background: var(--accent);
+      color: var(--primary);
+      transform: translateX(3px);
+    }
+
+    .stack-link-item.primary-stack {
+      background: var(--primary);
+      color: var(--primary-foreground);
+      border-color: var(--primary);
+    }
+
+    .stack-link-item.primary-stack:hover {
+      background: var(--moss);
+      border-color: var(--moss);
+      color: var(--primary-foreground);
+    }
+
+    .stack-link-item svg {
+      width: 13px;
+      height: 13px;
+      color: currentColor;
+    }
+
     .intro-actions {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 19px;
-      margin-top: 30px;
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .button-ink {
@@ -235,7 +289,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      min-height: 43px;
+      min-height: 40px;
       padding-inline: 17px;
       border-radius: 2px;
       background: var(--primary);
@@ -260,7 +314,7 @@
       align-items: center;
       gap: 7px;
       color: var(--ink-soft);
-      font-size: 10px;
+      font-size: 11px;
       text-decoration: none;
     }
 
@@ -276,12 +330,20 @@
     .intro-visual {
       position: relative;
       min-width: 0;
+      max-width: 480px;
+      justify-self: end;
+      width: 100%;
+    }
+
+    .intro-visual-inner {
+      padding: 10px;
+      position: relative;
     }
 
     .intro-visual::before {
       position: absolute;
       z-index: 0;
-      inset: 15px -14px -15px 14px;
+      inset: 6px -6px -6px 6px;
       border: 1px solid var(--signal);
       content: "";
     }
@@ -291,9 +353,9 @@
       z-index: 1;
       display: block;
       width: 100%;
-      aspect-ratio: 1.45;
+      aspect-ratio: 1.35;
       object-fit: cover;
-      object-position: center 22%;
+      object-position: center 20%;
       background: var(--paper-deep);
       transition: opacity 0.25s ease;
     }
@@ -807,8 +869,11 @@
       font-size: 9px;
     }
 
+    /* Bottom border on experience section */
     .experience-section {
       border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 93px;
     }
 
     .heading-mark {
@@ -1101,34 +1166,60 @@
             sathvigbhat@gmail.com
           </a>
         </div>
+
+        <!-- Prominent Vertically Stacked Links Beside Intro -->
+        <div class="intro-stack-links">
+          <a class="stack-link-item primary-stack" href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noreferrer">
+            <span>The Times of India (Profile &amp; Bylines)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a class="stack-link-item" href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noreferrer">
+            <span>Deccan Herald (Metrolife Desk Profile)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a class="stack-link-item" href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noreferrer">
+            <span>Creative Portfolio (Wix: Video &amp; Design)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a class="stack-link-item" href="https://substack.com/@sathvibhat" target="_blank" rel="noreferrer">
+            <span>Substack (Essays &amp; Commentary)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a class="stack-link-item" href="https://medium.com/@sathvigbhat/the-charlie-kirk-paradox-baf36f9a6af3" target="_blank" rel="noreferrer">
+            <span>Medium (Columns)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+        </div>
       </div>
 
       <div class="intro-visual">
-        <img
-          id="heroImage"
-          src="csr-fieldwork-1.jpg"
-          alt="Sathvi G Bhat during community and classroom outreach in Bengaluru"
-          width="1440"
-          height="960"
-          fetchpriority="high"
-        />
-        <div class="visual-caption">
-          <span id="heroCaption">Fieldwork &amp; Community Outreach · Bengaluru</span>
-          <span>12°58′ N&nbsp; 77°35′ E</span>
-        </div>
-        <button type="button" class="visual-index" id="heroNextBtn" title="Click to view next photo">
-          <span id="heroCounter">01 / 03</span>
-        </button>
-        <div class="visual-thumbs" aria-label="Select fieldwork photo">
-          <button type="button" class="visual-thumb-btn active" data-idx="0" aria-label="Photo 1">
-            <img src="csr-fieldwork-1.jpg" alt="" />
+        <div class="intro-visual-inner">
+          <img
+            id="heroImage"
+            src="csr-fieldwork-2.jpg"
+            alt="Sathvi G Bhat during community and classroom outreach in Bengaluru"
+            width="1440"
+            height="960"
+            fetchpriority="high"
+          />
+          <div class="visual-caption">
+            <span id="heroCaption">Interactive Chalkboard Session · Government School</span>
+            <span>12°58′ N&nbsp; 77°35′ E</span>
+          </div>
+          <button type="button" class="visual-index" id="heroNextBtn" title="Click to view next photo">
+            <span id="heroCounter">01 / 03</span>
           </button>
-          <button type="button" class="visual-thumb-btn" data-idx="1" aria-label="Photo 2">
-            <img src="csr-fieldwork-2.jpg" alt="" />
-          </button>
-          <button type="button" class="visual-thumb-btn" data-idx="2" aria-label="Photo 3">
-            <img src="csr-fieldwork-3.jpg" alt="" />
-          </button>
+          <div class="visual-thumbs" aria-label="Select fieldwork photo">
+            <button type="button" class="visual-thumb-btn active" data-idx="0" aria-label="Photo 1">
+              <img src="csr-fieldwork-2.jpg" alt="" />
+            </button>
+            <button type="button" class="visual-thumb-btn" data-idx="1" aria-label="Photo 1">
+              <img src="csr-fieldwork-1.jpg" alt="" />
+            </button>
+            <button type="button" class="visual-thumb-btn" data-idx="2" aria-label="Photo 3">
+              <img src="csr-fieldwork-3.jpg" alt="" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -1374,42 +1465,6 @@
       </div>
     </section>
 
-    <section class="contact-section" aria-labelledby="contact-title">
-      <div class="contact-inner">
-        <p class="eyebrow">The next story starts somewhere</p>
-        <h2 id="contact-title">Let's make<br />it a good one<span class="title-period">.</span></h2>
-        <div class="contact-bottom">
-          <a class="contact-email" href="mailto:sathvigbhat@gmail.com">
-            sathvigbhat@gmail.com
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </a>
-          <a class="contact-phone" href="tel:+919483040884">+91 94830 40884</a>
-          <div class="contact-socials">
-            <a href="https://substack.com/@sathvibhat" target="_blank" rel="noreferrer">
-              Substack
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="https://medium.com/@sathvigbhat/the-charlie-kirk-paradox-baf36f9a6af3" target="_blank" rel="noreferrer">
-              Medium
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noreferrer">
-              Deccan Herald
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noreferrer">
-              Times of India
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noreferrer">
-              Creative work (Wix)
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="site-footer">
       <span>© 2026 Sathvi G Bhat</span>
       <span>Independent thought. Accountable reporting.</span>
@@ -1421,15 +1476,15 @@
   </main>
 
   <script>
-    // Hero Image Switcher (01 / 03, 02 / 03, 03 / 03) using the 3 uploaded classroom fieldwork photos
+    // Hero Image Switcher (01 / 03, 02 / 03, 03 / 03) starting with Image 2 (Chalkboard session)
     const HERO_PHOTOS = [
-      {
-        src: "csr-fieldwork-1.jpg",
-        caption: "Fieldwork & Community Outreach · Bengaluru"
-      },
       {
         src: "csr-fieldwork-2.jpg",
         caption: "Interactive Chalkboard Session · Government School"
+      },
+      {
+        src: "csr-fieldwork-1.jpg",
+        caption: "Fieldwork & Community Outreach · Bengaluru"
       },
       {
         src: "csr-fieldwork-3.jpg",
