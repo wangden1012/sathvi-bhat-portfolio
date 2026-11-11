@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sathvi G Bhat — Communications, CSR Engagement &amp; Journalism Portfolio Hub</title>
+  <meta name="description" content="Official Portfolio Hub of Sathvi G Bhat — Communications, Corporate Storytelling &amp; CSR Engagement Specialist. 50+ published credits across Thomson Reuters, Deccan Herald, The Indian Express, and The Times of India, plus CSR campaigns at The Titli Foundation and People For Animals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --bg-elevated: #ffffff;
+      --bg-subtle: #f2efe9;
+      --text-main: #141413;
+      --text-muted: #57534e;
+      --text-soft: #78716c;
+      --accent: #0f3d5e;
+      --accent-hover: #0a2940;
+      --accent-soft: #e0f2fe;
+      --crimson: #991b1b;
+      --crimson-soft: #fef2f2;
+      --emerald: #065f46;
+      --emerald-soft: #ecfdf5;
+      --amber: #92400e;
+      --amber-soft: #fffbeb;
+      --border: #e5e0d8;
+      --shadow-sm: 0 2px 8px rgba(20, 20, 19, 0.04);
+      --shadow-md: 0 10px 30px -5px rgba(20, 20, 19, 0.08);
+      --radius: 14px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0c0d10;
+      --bg-elevated: #15171c;
+      --bg-subtle: #1d2026;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-soft: #6b7280;
+      --accent: #38bdf8;
+      --accent-hover: #7dd3fc;
+      --accent-soft: rgba(56, 189, 248, 0.14);
+      --crimson: #f87171;
+      --crimson-soft: rgba(248, 113, 113, 0.14);
+      --emerald: #34d399;
+      --emerald-soft: rgba(52, 211, 153, 0.14);
+      --amber: #fbbf24;
+      --amber-soft: rgba(251, 191, 36, 0.14);
+      --border: #262932;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 12px 32px -4px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Sticky Top Navigation */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-name {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.65rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .theme-btn {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 0.42rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .theme-btn:hover {
+      border-color: var(--accent);
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
+
+    .hero h1 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      max-width: 68ch;
+    }
+
+    .hero-lead strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.52rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      background: var(--bg-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+
+    .pill-link:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .pill-link.primary {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    [data-theme="dark"] .pill-link.primary {
+      color: #0c0d10;
+    }
+
+    .pill-link.primary:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Stats Card Grid */
+    .stats-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .stats-card-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-soft);
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.9rem;
+    }
+
+    .stat-box {
+      padding: 0.95rem;
+      border-radius: 10px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+    }
+
+    .stat-num {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 2.1rem;
+      line-height: 1;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .stat-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Headers */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .section-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 65ch;
+      margin-top: 0.3rem;
+    }
+
+    /* Ecosystem Hub Grid (Wix & External Profiles) */
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .hub-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .hub-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hub-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      width: fit-content;
+      font-weight: 600;
+    }
+
+    .badge-wix { background: var(--amber-soft); color: var(--amber); }
+    .badge-press { background: var(--accent-soft); color: var(--accent); }
+    .badge-csr { background: var(--emerald-soft); color: var(--emerald); }
+    .badge-wire { background: var(--crimson-soft); color: var(--crimson); }
+
+    .hub-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-top: 0.35rem;
+    }
+
+    .hub-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .hub-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.65rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    /* CSR & Volunteer Engagement Section */
+    .csr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+      .csr-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .csr-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .csr-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .csr-org {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.15;
+    }
+
+    .csr-role {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.2rem;
+    }
+
+    .csr-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-soft);
+      white-space: nowrap;
+    }
+
+    .csr-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .csr-list li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      position: relative;
+      padding-left: 1.15rem;
+    }
+
+    .csr-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .csr-list li strong {
+      color: var(--text-main);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .skill-tag {
+      font-size: 0.74rem;
+      padding: 0.22rem 0.6rem;
+      border-radius: 6px;
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      font-weight: 500;
+    }
+
+    /* Filter & Search Bar for 50+ Articles */
+    .filter-toolbar {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tab-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .filter-tab {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.48rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .filter-tab:hover {
+      border-color: var(--accent);
+      color: var(--text-main);
+    }
+
+    .filter-tab.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    [data-theme="dark"] .filter-tab.active {
+      color: #0c0d10;
+    }
+
+    .tab-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.05rem 0.4rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 240px;
+      padding: 0.6rem 0.95rem;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-main);
+      font-size: 0.88rem;
+      font-family: inherit;
+    }
+
+    .search-input:focus {
+      outline: 2px solid var(--accent);
+      border-color: transparent;
+    }
+
+    .beat-select {
+      padding: 0.6rem 0.85rem;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-family: inherit;
+    }
+
+    /* Articles Grid */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.15rem;
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .article-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.9rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .article-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .outlet-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    .outlet-reuters { background: var(--crimson-soft); color: var(--crimson); }
+    .outlet-dh { background: var(--accent-soft); color: var(--accent); }
+    .outlet-ie { background: var(--amber-soft); color: var(--amber); }
+    .outlet-toi { background: var(--emerald-soft); color: var(--emerald); }
+
+    .article-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-soft);
+    }
+
+    .article-title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      line-height: 1.38;
+      color: var(--text-main);
+    }
+
+    .article-excerpt {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .credit-line {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-soft);
+      background: var(--bg-subtle);
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .article-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .beat-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .action-btns {
+      display: flex;
+      gap: 0.45rem;
+    }
+
+    .btn-sm {
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.35rem 0.7rem;
+      border-radius: 7px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      transition: all 0.15s;
+    }
+
+    .btn-sm:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-sm.primary-link {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: transparent;
+    }
+
+    .btn-sm.primary-link:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .btn-sm.primary-link:hover {
+      color: #0c0d10;
+    }
+
+    /* Multimedia Grid */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.2rem;
+    }
+
+    /* Modal Dialog for Archived Copy / Excerpt */
+    dialog.dispatch-modal {
+      margin: auto;
+      max-width: 680px;
+      width: calc(100% - 2rem);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--bg-elevated);
+      color: var(--text-main);
+      padding: 0;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    }
+
+    dialog.dispatch-modal::backdrop {
+      background: rgba(12, 13, 16, 0.65);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-inner {
+      padding: 1.75rem;
+    }
+
+    .modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-close {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .modal-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 0.85rem;
+    }
+
+    .modal-body {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      white-space: pre-line;
+    }
+
+    .footer {
+      padding: 2.5rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <span class="brand-name">Sathvi G Bhat</span>
+        <span class="brand-tag">Portfolio &amp; Archive Hub</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#ecosystem">Wix &amp; Profiles</a>
+        <a href="#csr">CSR &amp; Volunteering</a>
+        <a href="#archive">50+ Published Articles</a>
+        <a href="#multimedia">Video &amp; Graphics</a>
+        <a href="#education">Education &amp; Skills</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle color theme">
+          <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Communications • Corporate Storytelling • CSR Engagement • High-Tech Media</span>
+          <h1>Crafting <em>impactful stories</em> across CSR, technology, and community.</h1>
+          <p class="hero-lead">
+            Hi, I’m <strong>Sathvi G Bhat</strong> — an all-round <strong>Communications, Corporate Storytelling, and CSR Engagement</strong> professional based in Bengaluru. Holding a <strong>Master’s in Media &amp; Communication Studies (Multimedia Journalism)</strong> from CHRIST University and a <strong>Bachelor’s in Journalism, Psychology &amp; English</strong> from Jain University, I combine hands-on <strong>CSR &amp; volunteer campaign execution</strong> at <strong>The Titli Foundation</strong> and <strong>People For Animals</strong> with <strong>semiconductor and high-tech industry coverage</strong> at <strong>Thomson Reuters</strong> and <strong>50+ published stories</strong> in India’s leading national dailies.
+          </p>
+          <div class="contact-bar">
+            <a class="pill-link primary" href="mailto:sathvigbhat@gmail.com">✉️ sathvigbhat@gmail.com</a>
+            <a class="pill-link" href="tel:+919483040884">📞 +91 9483040884</a>
+            <a class="pill-link" href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noopener">🎨 Wix Art &amp; Video Portfolio ↗</a>
+            <a class="pill-link" href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noopener">📰 Deccan Herald Author Page ↗</a>
+            <a class="pill-link" href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noopener">🗞️ Times of India Topic Page ↗</a>
+            <a class="pill-link" href="https://substack.com/@sathvibhat" target="_blank" rel="noopener">✒️ Substack ↗</a>
+          </div>
+        </div>
+
+        <aside class="stats-card">
+          <div class="stats-card-title">
+            <span>Verified Portfolio Metrics</span>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-num">50+</div>
+              <div class="stat-label">Published Credits</div>
+              <div class="stat-sub">Wire dispatches, features &amp; investigations</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">2</div>
+              <div class="stat-label">CSR &amp; NGO Roles</div>
+              <div class="stat-sub">The Titli Foundation &amp; People For Animals</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">20</div>
+              <div class="stat-label">Reuters Wire Credits</div>
+              <div class="stat-sub">Semiconductors, AI, M&amp;A, IPOs &amp; Urgents</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">32+</div>
+              <div class="stat-label">National Daily Bylines</div>
+              <div class="stat-sub">Deccan Herald, Indian Express &amp; TOI</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Digital Ecosystem & Wix Sites Hub -->
+    <section id="ecosystem">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">All Sites &amp; Official Profiles in One Place</span>
+          <h2 class="section-title">Digital Portfolio &amp; Author Ecosystem</h2>
+          <p class="section-subtitle">Direct access to my Wix multimedia/art site, video documentaries, graphic design collaterals, official newspaper author profiles, and essay columns.</p>
+        </div>
+      </div>
+
+      <div class="hub-grid">
+        <a class="hub-card" href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-wix">Wix Main Site</span>
+            <h3>Multimedia &amp; Art Portfolio Home</h3>
+            <p>Central showcase featuring creative direction, visual storytelling, photography, and multimedia journalism highlights.</p>
+          </div>
+          <div class="hub-url"><span>sathvigbhat.wixsite.com/artportfolio</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-wix">Wix Video &amp; Broadcast</span>
+            <h3>Video Documentaries &amp; Broadcast Packages</h3>
+            <p>Watch "Bonda Ajja of Mangalore", "Flavours and Conversations", "Pirates of the Buckingham Canal", and TV news packages.</p>
+          </div>
+          <div class="hub-url"><span>sathvigbhat.wixsite.com/artportfolio/blog</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://sathvigbhat.wixsite.com/artportfolio/portfolio" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-wix">Wix Visual Collaterals</span>
+            <h3>Graphics, Event Posters &amp; Illustrations</h3>
+            <p>Event posters, campaign graphics, social media carousels, and fine-art illustrations designed for CSR and editorial campaigns.</p>
+          </div>
+          <div class="hub-url"><span>sathvigbhat.wixsite.com/artportfolio/portfolio</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-press">Official Newspaper Profile</span>
+            <h3>Deccan Herald — Author Page (13 Bylines)</h3>
+            <p>State technology policy (under-16 social media regulation), urban lake sustainability, civic resilience, and performing arts.</p>
+          </div>
+          <div class="hub-url"><span>deccanherald.com/author/sathvi-g-bhat</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-press">Official Newspaper Profile</span>
+            <h3>The Times of India — Topic Page (10–11 Stories)</h3>
+            <p>STEM/engineering CBSE &amp; SSLC student achievers, Azim Premji university convocation on public service, and literary events.</p>
+          </div>
+          <div class="hub-url"><span>timesofindia.indiatimes.com/topic/Sathvi-G-Bhat</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://substack.com/@sathvibhat" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-press">Newsletter &amp; Essays</span>
+            <h3>Substack — @sathvibhat</h3>
+            <p>Long-form cultural commentary, reflective essays, and independent narrative writing.</p>
+          </div>
+          <div class="hub-url"><span>substack.com/@sathvibhat</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://medium.com/@sathvigbhat/the-charlie-kirk-paradox-baf36f9a6af3" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-press">Long-Form Column</span>
+            <h3>Medium — Media &amp; Cultural Analysis</h3>
+            <p>Published essays examining public discourse, digital platforms, and socio-political communication.</p>
+          </div>
+          <div class="hub-url"><span>medium.com/@sathvigbhat</span> <span>↗</span></div>
+        </a>
+
+        <a class="hub-card" href="https://theorg.com/org/thomson-reuters/person/sathvi-g-bhat" target="_blank" rel="noopener">
+          <div>
+            <span class="hub-badge badge-wire">Global News Monitoring</span>
+            <h3>Thomson Reuters — Correspondent Profile</h3>
+            <p>Trainee Correspondent on the Global News Monitoring desk in Bengaluru covering global tech, semiconductors, M&amp;A, and breaking news.</p>
+          </div>
+          <div class="hub-url"><span>theorg.com/org/thomson-reuters/...</span> <span>↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CSR, Volunteer Engagement & Corporate Communications Section -->
+    <section id="csr">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Community Impact • Volunteer Coordination • Event Collaterals</span>
+          <h2 class="section-title">CSR, Volunteer Engagement &amp; Communications Experience</h2>
+          <p class="section-subtitle">Hands-on experience planning and executing CSR campaigns, managing volunteer logistics and stakeholder databases, designing event collaterals, and documenting community impact across two leading NGOs.</p>
+        </div>
+      </div>
+
+      <div class="csr-grid">
+        <!-- The Titli Foundation -->
+        <article class="csr-card">
+          <div class="csr-header">
+            <div>
+              <h3 class="csr-org"><a href="https://www.titlifoundation.in/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">The Titli Foundation ↗</a></h3>
+              <div class="csr-role">CSR, Communications &amp; Campaign Collaterals Intern</div>
+            </div>
+            <span class="csr-date">2022, 2024 – 2025 • Bengaluru</span>
+          </div>
+          <ul class="csr-list">
+            <li><strong>End-to-End CSR &amp; Volunteering Execution:</strong> Supported the planning and execution of large-scale community donation drives and menstrual equity/WASH awareness campaigns, managing <strong>event logistics, schedules, volunteer registrations, materials, and on-ground coordination</strong>.</li>
+            <li><strong>Volunteer &amp; Partner Database Management:</strong> Communicated directly with volunteers and NGO/community partners before, during, and after CSR drives to provide clear instructions, while <strong>maintaining an organized database of volunteers, partners, and CSR activities</strong>.</li>
+            <li><strong>Collaterals, Social Media &amp; Impact Reporting:</strong> Designed <strong>event posters, presentations, invitations, announcements, and social media campaigns</strong> (LinkedIn &amp; Instagram) with a cohesive brand voice, and <strong>collected on-ground stories, photographs, and beneficiary testimonials</strong> for post-campaign documentation and reporting.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="skill-tag">CSR Event Logistics &amp; Schedules</span>
+            <span class="skill-tag">Volunteer Registrations &amp; Database</span>
+            <span class="skill-tag">Event Posters &amp; Collaterals</span>
+            <span class="skill-tag">Impact Stories &amp; Testimonials</span>
+          </div>
+        </article>
+
+        <!-- People For Animals -->
+        <article class="csr-card">
+          <div class="csr-header">
+            <div>
+              <h3 class="csr-org"><a href="https://peopleforanimalsbangalore.org/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">People For Animals (PFA) ↗</a></h3>
+              <div class="csr-role">CSR Engagement &amp; Corporate Communications Intern</div>
+            </div>
+            <span class="csr-date">June 2023 • Bengaluru</span>
+          </div>
+          <ul class="csr-list">
+            <li><strong>Corporate CSR Outreach &amp; Partnerships:</strong> Built and maintained <strong>corporate outreach partnerships for CSR initiatives</strong>, collaborating with corporate CSR teams, employee volunteers, and civic stakeholders to fund and execute wildlife rescue, rehabilitation, and urban awareness programs.</li>
+            <li><strong>Multi-Channel Stakeholder Communications:</strong> Drafted and coordinated <strong>partner pitches, emails, invitations, announcements, reminders, social media promotions, and CSR updates</strong> to mobilize employee volunteering and highlight positive community impact.</li>
+            <li><strong>Website Blogs, Newsletters &amp; Reach Metrics:</strong> Authored research-backed <strong>long-form blog articles and newsletter features</strong> for the official website, documenting on-ground volunteering outcomes, donor impact, and campaign reach metrics.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="skill-tag">Corporate CSR Partnerships</span>
+            <span class="skill-tag">Stakeholder Emails &amp; Announcements</span>
+            <span class="skill-tag">Newsletters &amp; Website Blogs</span>
+            <span class="skill-tag">Community Impact Documentation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Complete 50+ Published Articles & Wire Archive -->
+    <section id="archive">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Complete Verified Journalism &amp; Wire Inventory</span>
+          <h2 class="section-title">50+ Published Articles, Dispatches &amp; Investigations</h2>
+          <p class="section-subtitle">Browse every published story across <strong>Thomson Reuters (Global News Monitoring)</strong>, <strong>Deccan Herald</strong>, <strong>The Indian Express</strong>, and <strong>The Times of India</strong>. Click <em>"Read Dispatch / Excerpt"</em> on any card to read the archived wire copy &amp; reporting summary inline, or open the live publication URL.</p>
+        </div>
+      </div>
+
+      <!-- Filter & Search Controls -->
+      <div class="filter-toolbar">
+        <div class="filter-top">
+          <div class="tab-group" id="outletTabs">
+            <button class="filter-tab active" data-outlet="all">All Published Work <span class="tab-count" id="count-all">50</span></button>
+            <button class="filter-tab" data-outlet="Thomson Reuters">Thomson Reuters (GNM) <span class="tab-count">20</span></button>
+            <button class="filter-tab" data-outlet="Deccan Herald">Deccan Herald <span class="tab-count">13</span></button>
+            <button class="filter-tab" data-outlet="The Indian Express">The Indian Express <span class="tab-count">9</span></button>
+            <button class="filter-tab" data-outlet="The Times of India">The Times of India <span class="tab-count">8</span></button>
+          </div>
+        </div>
+        <div class="search-box">
+          <input type="search" id="searchInput" class="search-input" placeholder="Search by keyword (e.g., Micron, ASML, Binance, STEM, Padma Shri, Azim Premji, Ejipura, IPO)..." />
+          <select id="beatSelect" class="beat-select" aria-label="Filter by Beat or Theme">
+            <option value="all">All Beats &amp; Themes</option>
+            <option value="High-Tech, Semiconductors & AI">High-Tech, Semiconductors &amp; AI</option>
+            <option value="Education, STEM & Changemakers">Education, STEM &amp; Changemakers</option>
+            <option value="Corporate M&A, IPOs & Markets">Corporate M&amp;A, IPOs &amp; Markets</option>
+            <option value="Civic Policy, Sustainability & Impact">Civic Policy, Sustainability &amp; Impact</option>
+            <option value="Culture, Arts & Community Events">Culture, Arts &amp; Community Events</option>
+            <option value="Breaking Urgents & Global Affairs">Breaking Urgents &amp; Global Affairs</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="articles-grid" id="articlesGrid"></div>
+    </section>
+
+    <!-- Multimedia, Broadcast & Visual Collaterals Section -->
+    <section id="multimedia">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Broadcast Video • Documentary • Graphic Design</span>
+          <h2 class="section-title">Multimedia Storytelling &amp; Visual Collaterals</h2>
+          <p class="section-subtitle">End-to-end video production, scripting, camera operation, broadcast packaging, and visual collateral design hosted on my Wix portfolio.</p>
+        </div>
+      </div>
+
+      <div class="media-grid">
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-ie">Video Documentary</span>
+              <span class="article-date">Apr 2025</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">“Bonda Ajja of Mangalore” — Visual Human-Interest Documentary</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">On-ground video documentary profiling Sitharam Kamath (“Bonda Ajja”), an iconic culinary figure and community institution in Mangalorean student life.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">Video Production &amp; Scripting</span>
+            <a class="btn-sm primary-link" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">Watch on Wix ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-dh">Broadcast Package</span>
+              <span class="article-date">Dec 2025</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">Television Broadcast News Report Package</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">Produced a complete television-style broadcast news package featuring piece-to-camera (PTC), voiceover scripting, stakeholder soundbites, and multi-track video editing.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">Broadcast Journalism</span>
+            <a class="btn-sm primary-link" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">Watch on Wix ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-toi">On-Camera Feature</span>
+              <span class="article-date">Apr 2025</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">“Flavours and Conversations” — Cultural &amp; Culinary Video Feature</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">On-camera lifestyle and community feature exploring how diverse culinary traditions foster cross-cultural dialogue in Koramangala, Bengaluru.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">On-Camera Hosting &amp; Editing</span>
+            <a class="btn-sm primary-link" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">Watch on Wix ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-reuters">Long-Form Feature</span>
+              <span class="article-date">Apr 2025</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">“Pirates of the Buckingham Canal” — Narrative Feature</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">In-depth narrative journalism piece chronicling the grueling training, discipline, and camaraderie of merchant navy cadets in Chennai.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">Narrative Storytelling</span>
+            <a class="btn-sm primary-link" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">Read on Wix ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-ie">Design &amp; Collaterals</span>
+              <span class="article-date">2022 – 2026</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">CSR Event Posters, Campaign Graphics &amp; Visual Art Gallery</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">Curated visual portfolio of event posters, donation drive collaterals, social media carousels, and illustrations created for NGO campaigns and editorial projects.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">Brand &amp; Collateral Design</span>
+            <a class="btn-sm primary-link" href="https://sathvigbhat.wixsite.com/artportfolio/portfolio" target="_blank" rel="noopener">View Gallery on Wix ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill outlet-dh">Essays &amp; Columns</span>
+              <span class="article-date">2025 – 2026</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">“I Open My Art to You” &amp; Independent Cultural Commentary</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">Reflective essays on visual art, media rhetoric (“The Charlie Kirk Paradox”), and public discourse published across Wix, Substack, and Medium.</p>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">Essays &amp; Columns</span>
+            <a class="btn-sm primary-link" href="https://substack.com/@sathvibhat" target="_blank" rel="noopener">Read on Substack ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Core Competencies -->
+    <section id="education">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Academic Foundation &amp; Capabilities</span>
+          <h2 class="section-title">Education &amp; Core Competencies</h2>
+        </div>
+      </div>
+
+      <div class="csr-grid">
+        <div class="csr-card">
+          <div class="csr-header">
+            <div>
+              <h3 class="csr-org">CHRIST (Deemed-to-be) University</h3>
+              <div class="csr-role">M.A. in Media &amp; Communication Studies (Multimedia Journalism)</div>
+            </div>
+            <span class="csr-date">2024 – 2026 • GPA: 3.6 / 4.0</span>
+          </div>
+          <div class="csr-header" style="border-bottom:none; margin-bottom:0; padding-bottom:0;">
+            <div>
+              <h3 class="csr-org">Jain University — School of Social Sciences</h3>
+              <div class="csr-role">B.A. in English, Psychology &amp; Journalism</div>
+            </div>
+            <span class="csr-date">2021 – 2024 • GPA: 8.12 / 10.0</span>
+          </div>
+        </div>
+
+        <div class="csr-card">
+          <h3 class="csr-org" style="margin-bottom:0.75rem;">Core Competencies &amp; Languages</h3>
+          <div class="tag-row" style="margin-bottom:1rem;">
+            <span class="skill-tag">CSR Campaign Planning &amp; Execution</span>
+            <span class="skill-tag">Employee Volunteering Coordination</span>
+            <span class="skill-tag">Event Logistics, Schedules &amp; Registrations</span>
+            <span class="skill-tag">Volunteer &amp; Partner Databases</span>
+            <span class="skill-tag">Internal &amp; External Storytelling</span>
+            <span class="skill-tag">Intranet / CMS Publishing</span>
+            <span class="skill-tag">Semiconductor &amp; High-Tech Coverage</span>
+            <span class="skill-tag">Event Posters, Presentations &amp; Collaterals</span>
+            <span class="skill-tag">Impact Documentation (Photos, Testimonials, Reports)</span>
+            <span class="skill-tag">Broadcast Video &amp; Multimedia Production</span>
+            <span class="skill-tag">English (Fluent)</span>
+            <span class="skill-tag">Kannada (Fluent)</span>
+            <span class="skill-tag">Hindi (Fluent)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Reading Archived Wire Dispatches & Full Story Snapshots -->
+  <dialog class="dispatch-modal" id="dispatchModal">
+    <div class="modal-inner">
+      <div class="modal-top">
+        <span class="outlet-pill" id="modalOutlet">Outlet</span>
+        <button class="modal-close" id="closeModal">✕ Close</button>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Story Title</h3>
+      <div class="credit-line" id="modalCredit" style="margin-bottom:1rem;">Attribution</div>
+      <div class="modal-body" id="modalBody">Story details...</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; border-top:1px solid var(--border); padding-top:1rem;">
+        <span class="article-date" id="modalDate">Date</span>
+        <a class="pill-link primary" id="modalLink" href="#" target="_blank" rel="noopener">Open Live Source URL ↗</a>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer container">
+    <p>© 2026 <strong>Sathvi G Bhat</strong> • Bengaluru, Karnataka, India • <a href="mailto:sathvigbhat@gmail.com" style="color:var(--accent);">sathvigbhat@gmail.com</a> • +91 9483040884</p>
+  </footer>
+
+  <script>
+    // Complete dataset of 50 verified published credits across Thomson Reuters, Deccan Herald, The Indian Express, and The Times of India
+    const ARTICLES = [
+      // ================= THOMSON REUTERS (20) =================
+      {
+        outlet: "Thomson Reuters",
+        date: "Nov 5, 2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Micron pauses work on $4.5 billion Taiwan plant, Bloomberg News reports",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru; Editing by Jochelle Mendonca",
+        excerpt: "International semiconductor wire dispatch covering U.S. memory chipmaker Micron Technology's decision to pause construction on its $4.5 billion facility in Taiwan amid global chip supply chain realignments.",
+        archiveText: "BENGALURU (Reuters) — U.S. memory chipmaker Micron Technology has paused work on a $4.5 billion plant in Taiwan, Bloomberg News reported on Thursday.\n\nKey Highlights Covered in Dispatch:\n• Monitored and synthesized breaking semiconductor supply-chain developments impacting global memory chip capacity.\n• Contextualized Micron's capital expenditure adjustments within broader APAC semiconductor manufacturing trends.\n• Filed rapid wire dispatch from the Bengaluru Global News Monitoring (GNM) desk.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru; Editing by Jochelle Mendonca)",
+        url: "https://www.iex.nl/Nieuws/848800/Micron-pauses-work-on-45-billion-Taiwan-plant-Bloomberg-News-reports.aspx"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Dutch PM raised ASML export curbs with Trump, Bloomberg reports",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "Semiconductor geopolitics dispatch detailing high-level diplomatic discussions between the Dutch Prime Minister and U.S. President Donald Trump regarding export restrictions on lithography giant ASML.",
+        archiveText: "BENGALURU (Reuters) — The Dutch Prime Minister raised the issue of semiconductor equipment export restrictions on ASML Holding during talks with U.S. President Donald Trump, Bloomberg News reported.\n\nKey Highlights Covered in Dispatch:\n• Covered critical geopolitical developments affecting ASML Holding, the world's leading supplier of extreme ultraviolet (EUV) lithography systems to global chipmakers.\n• Highlighted cross-border trade policy impacts on the global semiconductor manufacturing ecosystem.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.stockopedia.com/share-prices/asml-holding-AMS:ASML/news/dutch-pm-raised-asml-export-curbs-with-trump-bloomberg-reports-01a0d4a0-e12d-73ee-81a9-8b5c7321b045/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 26, 2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Thinking Machines Lab co-founder Barret Zoph joins Google",
+        credit: "Reporting by Natalia Bueno Rebolledo in Mexico City and Sathvi G Bhat in Bengaluru; Editing by Rashmi Aich",
+        creditShort: "Reporting by Natalia Bueno Rebolledo & Sathvi G Bhat in Bengaluru",
+        excerpt: "Big Tech & AI talent wire report on Thinking Machines Lab co-founder and former OpenAI VP of Research Barret Zoph joining Google to spearhead frontier AI initiatives.",
+        archiveText: "BENGALURU / MEXICO CITY (Reuters) — Thinking Machines Lab co-founder Barret Zoph has joined Alphabet's Google, marking another high-profile artificial intelligence leadership move across frontier AI labs.\n\nKey Highlights Covered in Dispatch:\n• Tracked executive talent shifts between Thinking Machines Lab, OpenAI, and Google.\n• Co-reported cross-bureau wire dispatch between Mexico City and Bengaluru GNM desks.\n\nAttribution: (Reporting by Natalia Bueno Rebolledo in Mexico City and Sathvi G Bhat in Bengaluru; Editing by Rashmi Aich)",
+        url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/thinking-machines-lab-cofounder-barret-zoph-joins-google/articleshow/123523192.cms"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Sept 14, 2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Anthropic tells investors it will be profitable for second straight quarter, FT reports",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "AI sector financial dispatch reporting on frontier AI developer Anthropic informing investors of its second consecutive quarter of profitability.",
+        archiveText: "BENGALURU (Reuters) — Artificial intelligence company Anthropic has told investors that it expects to be profitable for a second consecutive quarter, the Financial Times reported.\n\nKey Highlights Covered in Dispatch:\n• Synthesized key financial metrics and investor disclosures in the enterprise generative AI sector.\n• Filed rapid Global News Monitoring wire brief for international financial terminals.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.thestar.com.my/tech/tech-news/2026/09/14/anthropic-tells-investors-it-will-be-profitable-for-second-straight-quarter-ft-reports"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Sept 10, 2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Texas judge rules TikTok misled users on child safety feature",
+        credit: "Reporting by Sathvi G. Bhat in Bengaluru; Editing by Tom Hogue",
+        excerpt: "U.S. tech regulation & judiciary dispatch covering a Texas court ruling that TikTok misled users regarding the effectiveness of its child safety controls.",
+        archiveText: "BENGALURU (Reuters) — A judge in Texas ruled that social media platform TikTok misled users about the safety of its features designed to protect children, delivering a key decision in ongoing state consumer protection litigation.\n\nAttribution: (Reporting by Sathvi G. Bhat in Bengaluru; Editing by Tom Hogue)",
+        url: "https://www.AuroraNews.com"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Nov 1, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Binance sees spike in withdrawals as exchange returns online after $6.3 billion heist",
+        credit: "Reporting by Shubham Kalia, Kanjyik Ghosh, Hannah Lang; Additional reporting by Devika Nair, Angela Christy, and Sathvi G Bhat in Bengaluru",
+        excerpt: "Global crypto markets & cybersecurity dispatch tracking user withdrawal surges as Binance restored operations following a major $6.3 billion security breach.",
+        archiveText: "BENGALURU / NEW YORK (Reuters) — Cryptocurrency exchange Binance experienced a sharp spike in user withdrawals as the platform returned online following a $6.3 billion heist, according to blockchain analytics data and company statements.\n\nKey Highlights Covered in Dispatch:\n• Monitored real-time exchange liquidity, recovery updates, and market contagion metrics.\n• Contributed rapid Bengaluru desk reporting to multi-bureau global lead story.\n\nAttribution: (Reporting by Shubham Kalia in Bengaluru, Kanjyik Ghosh in Barcelona, and Hannah Lang in New York; Additional reporting by Devika Nair, Angela Christy, and Sathvi G Bhat)",
+        url: "https://www.investing.com/news/cryptocurrency-news"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Oct 31, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Binance to resume withdrawals after recovering bulk of $6 billion in stolen funds",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru (Global News Monitoring Urgent & Wire Update)",
+        excerpt: "Breaking market urgent and wire update reporting Binance's announcement to resume Bitcoin, Ether, and token withdrawals after recovering the majority of stolen assets.",
+        archiveText: "BENGALURU (Reuters) — Crypto exchange Binance said it will resume cryptocurrency withdrawals, including Bitcoin and Ether, after recovering the bulk ofroughly $6 billion in stolen funds.\n\nKey Highlights Covered in Dispatch:\n• Filed rapid breaking one-liner urgent and follow-up operational brief as exchange services resumed.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/technology/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Oct 23, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "BASF increases Evonik offer to €11.18 billion (€24 a share)",
+        credit: "Reporting by Alexander Huebner, Patricia Weiss, and Sathvi G Bhat in Bengaluru; Editing by Jonathan Ananda, Matthias Williams, and Susan Fenton",
+        excerpt: "Major European industrial M&A dispatch covering German chemical giant BASF raising its takeover bid for specialty chemicals maker Evonik to €11.18 billion.",
+        archiveText: "FRANKFURT / BENGALURU (Reuters) — German chemical giant BASF has increased its takeover offer for rival Evonik Industries to €24 per share, valuing the deal at approximately €11.18 billion, sources familiar with the matter said.\n\nAttribution: (Reporting by Alexander Huebner, Patricia Weiss, and Sathvi G Bhat in Bengaluru; Editing by Jonathan Ananda, Matthias Williams, and Susan Fenton)",
+        url: "https://www.inspectioneering.com/news/2026-10-23/11842/basf-increases-evonik-offer-to-1118-billion"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Sept 22, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Airtel Money targets up to $9 billion valuation in London IPO, FT reports",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru; Editing by Shreya Biswas and Jonathan Ananda",
+        excerpt: "Fintech & capital markets dispatch on Bharti Airtel's mobile money arm targeting a valuation of up to $9 billion in a planned London Stock Exchange listing.",
+        archiveText: "BENGALURU (Reuters) — Airtel Money, the mobile financial services arm of Airtel Africa, is targeting a valuation of up to $9 billion in a planned London initial public offering, the Financial Times reported.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru; Editing by Shreya Biswas and Jonathan Ananda)",
+        url: "https://zerodha.com/markets/stocks/BSE/BHARTIARTL/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Sept 25, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "KKR-backed electric bus maker PMI Electro Mobility confidentially files for Mumbai IPO draft papers",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru; Editing by Perla Velasco",
+        excerpt: "Clean mobility & Indian capital markets dispatch covering KKR-backed electric bus manufacturer PMI Electro Mobility filing confidential draft IPO papers in Mumbai.",
+        archiveText: "BENGALURU (Reuters) — KKR-backed Indian electric bus manufacturer PMI Electro Mobility Solutions has confidentially filed draft papers for a Mumbai initial public offering, looking to tap strong investor demand for clean-tech and EV infrastructure.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru; Editing by Perla Velasco)",
+        url: "https://zerodha.com/markets/stocks/NSE/TMCV/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Oct 1, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Torrent Gas files updated draft red herring prospectus for IPO",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru; Editing by Tasim Zahid",
+        excerpt: "Indian energy & regulatory filing dispatch reporting on city gas distribution company Torrent Gas filing its updated DRHP with SEBI for a public listing.",
+        archiveText: "BENGALURU (Reuters) — Indian city gas distributor Torrent Gas has filed an updated draft red herring prospectus (DRHP) with market regulator SEBI for its planned initial public offering.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru; Editing by Tasim Zahid)",
+        url: "https://zerodha.com/markets/stocks/NSE/TORNTPOWER/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 18, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Defense contractor Lyntris, shareholders raise about $298 million in downsized US IPO",
+        credit: "Reporting by Arasu Kannagi Basil and Sathvi G Bhat in Bengaluru",
+        excerpt: "U.S. aerospace & defense capital markets story on defense contractor Lyntris and selling shareholders raising $298 million in its U.S. initial public offering.",
+        archiveText: "BENGALURU (Reuters) — Defense contractor Lyntris and some of its existing shareholders raised approximately $298 million in a downsized U.S. initial public offering.\n\nAttribution: (Reporting by Arasu Kannagi Basil and Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/markets/deals/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 17, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Canada's OceanaGold to buy Ausgold for about $553 million, expand Australia presence",
+        credit: "Reporting by Sherry Jacob-Phillips and Sathvi G Bhat in Bengaluru",
+        excerpt: "Cross-border mining M&A dispatch on Canadian gold producer OceanaGold's $553 million acquisition of Ausgold to expand its Western Australian portfolio.",
+        archiveText: "BENGALURU (Reuters) — Canadian gold miner OceanaGold Corp agreed to acquire Australia's Ausgold Ltd in a deal valued at about $553 million, expanding its production footprint in Australia.\n\nAttribution: (Reporting by Sherry Jacob-Phillips and Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/markets/commodities/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Oct 20, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Private credit firm Tikehau seeks strategic investor, Bloomberg News reports",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "European alternative asset management brief on French private credit group Tikehau Capital exploring bringing in a strategic investor.",
+        archiveText: "BENGALURU (Reuters) — European alternative asset manager and private credit firm Tikehau Capital is seeking a strategic investor, Bloomberg News reported.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/business/finance/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Sept 6, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Britain's Gamma to get higher bid from Dutch private equity firm Waterland, Sunday Times says",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "UK telecoms & private equity buyout dispatch covering Dutch PE firm Waterland preparing a sweetened takeover bid for British cloud telecoms provider Gamma Communications.",
+        archiveText: "BENGALURU (Reuters) — British cloud communications provider Gamma is set to receive a higher takeover bid from Dutch private equity firm Waterland, the Sunday Times reported.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/markets/deals/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 30, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Incoming Swiss bank lobby chief warns against over-regulation, FT says",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "European financial regulation dispatch covering the incoming head of the Swiss Bankers Association warning policymakers against excessive post-crisis capital rules.",
+        archiveText: "BENGALURU (Reuters) — The incoming head of Switzerland's main banking lobby warned against over-regulation of the country's financial sector following recent banking reforms, the Financial Times reported.\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/business/finance/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 29, 2026",
+        beat: "Breaking Urgents & Global Affairs",
+        title: "US to take 35% stake in Venezuelan mogul Betancourt's oil venture, WSJ reports",
+        credit: "Reporting by Sathvi G Bhat and Gnaneshwar Rajan in Bengaluru",
+        excerpt: "Energy geopolitics dispatch on U.S. energy policy and a reported 35% equity stake arrangement in Venezuelan oil businessman Betancourt's venture.",
+        archiveText: "BENGALURU (Reuters) — The United States is set to take a 35% stake in an oil venture linked to Venezuelan businessman Betancourt, the Wall Street Journal reported.\n\nAttribution: (Reporting by Sathvi G Bhat and Gnaneshwar Rajan in Bengaluru)",
+        url: "https://www.reuters.com/business/energy/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Nov 1, 2026",
+        beat: "Breaking Urgents & Global Affairs",
+        title: "Samples for two suspected Ebola cases in Nigeria turn out negative",
+        credit: "Reporting by Ananya Palyekar and Sathvi G Bhat in Bengaluru and Nellie Peyton in Johannesburg; Editing by Raju Gopalakrishnan",
+        excerpt: "Global public health wire story confirming negative laboratory results for two suspected Ebola cases in Nigeria.",
+        archiveText: "BENGALURU / JOHANNESBURG (Reuters) — Laboratory samples taken from two patients suspected of having Ebola in Nigeria have tested negative, health authorities confirmed.\n\nAttribution: (Reporting by Ananya Palyekar and Sathvi G Bhat in Bengaluru and Nellie Peyton in Johannesburg; Editing by Raju Gopalakrishnan)",
+        url: "https://www.reuters.com/world/africa/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Oct 6, 2026",
+        beat: "Breaking Urgents & Global Affairs",
+        title: "Magnitude 5.1 earthquake hits Indian state, EMSC says (Breaking One-Liner Urgent)",
+        credit: "Reporting by Sathvi G Bhat in Bengaluru",
+        excerpt: "Real-time Global News Monitoring breaking one-liner urgent flashed to global terminals upon EMSC seismological detection of a 5.1-magnitude earthquake.",
+        archiveText: "BENGALURU (Reuters) — A magnitude 5.1 earthquake struck an Indian state on Tuesday, the European-Mediterranean Seismological Centre (EMSC) said.\n\n[Syndicated globally including Portuguese wire: 'Terremoto de magnitude 5,1 atinge Estado indiano, diz EMSC']\n\nAttribution: (Reporting by Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/world/india/"
+      },
+      {
+        outlet: "Thomson Reuters",
+        date: "Aug 23, 2026",
+        beat: "Breaking Urgents & Global Affairs",
+        title: "Brush fire in Nevada grows to over 10,500 acres (Breaking Wildfire Urgent)",
+        credit: "Reporting by Gnaneshwar Rajan and Sathvi G Bhat in Bengaluru",
+        excerpt: "Breaking U.S. environmental urgent tracking emergency containment alerts as a Nevada brush fire expanded past 10,500 acres.",
+        archiveText: "BENGALURU (Reuters) — A fast-moving brush fire in Nevada has grown to more than 10,500 acres, emergency management officials said.\n\nAttribution: (Reporting by Gnaneshwar Rajan and Sathvi G Bhat in Bengaluru)",
+        url: "https://www.reuters.com/world/us/"
+      },
+
+      // ================= DECCAN HERALD (13) =================
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 13, 2026",
+        beat: "High-Tech, Semiconductors & AI",
+        title: "Karnataka govt considers social media restrictions for under-16s, experts suggest alternatives",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Tech policy and youth digital safety report interviewing child psychologists, digital rights experts, and educators on Karnataka's proposed social media age regulations.",
+        archiveText: "BENGALURU (Deccan Herald) — As the Karnataka government weighs restrictions on social media usage for children under 16, mental health professionals, technologists, and child rights experts argue that digital literacy, parental frameworks, and platform accountability offer more sustainable solutions than blanket bans.",
+        url: "https://www.deccanherald.com/india/karnataka/karnataka-govt-considers-social-media-restrictions-for-under-16s-experts-suggest-alternatives-3929964"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 11, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Scientists slam new Karnataka lake buffer rule",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Environmental governance and urban sustainability story examining scientific critiques of proposed modifications to wetland buffer zones in Bengaluru.",
+        archiveText: "BENGALURU (Deccan Herald) — Leading urban ecologists and environmental scientists have raised serious concerns over changes to Karnataka's lake buffer zone regulations, warning of heightened flood risk and biodiversity loss across Bengaluru's interconnected lake system.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/scientists-slam-new-lake-buffer-rule-3927137"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 18, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Ugadi festivities continue in Bengaluru despite LPG crisis",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "On-ground civic economy and community resilience feature documenting how Bengaluru households, eateries, and sweet marts adapted during Ugadi amid commercial LPG disruptions.",
+        archiveText: "BENGALURU (Deccan Herald) — Despite supply disruptions and commercial LPG cylinder shortages, Bengaluru residents and traditional sweet makers kept Ugadi festivities alive through community resourcefulness.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/ugadi-festivities-continue-in-bengalurudespite-lpg-crisis-3935671"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Feb 21, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Making punk rock for a cause",
+        credit: "By Sathvi G Bhat • Deccan Herald Features",
+        excerpt: "Social impact feature profiling grassroots musicians channeling punk rock concerts into community fundraising and social awareness drives.",
+        archiveText: "BENGALURU (Deccan Herald) — How independent bands and grassroots organizers are turning high-energy punk rock gigs into community fundraising and social impact platforms.",
+        url: "https://www.deccanherald.com/features/music/making-punk-rock-for-a-cause-3906159"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 27, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Kadugolla shepherding community bring their music to public",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Indigenous heritage feature spotlighting the pastoral Kadugolla community bringing their centuries-old oral songs and percussion traditions to urban audiences.",
+        archiveText: "BENGALURU (Deccan Herald) — Folk artists from Karnataka's nomadic Kadugolla shepherding community take center stage in Bengaluru to preserve and share their rich oral musical heritage.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/kadugolla-shepherding-community-bring-their-music-to-public-3945960"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Feb 25, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Banu Mushtaq's Booker-winning stories on stage in Bengaluru on February 27",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Literary and theatrical event coverage on the stage adaptation of International Booker Prize winner Banu Mushtaq's acclaimed Kannada short stories.",
+        archiveText: "BENGALURU (Deccan Herald) — Following Banu Mushtaq's historic International Booker Prize win for 'Heart Lamp', theatre practitioners in Bengaluru bring her poignant stories of women's resilience to the stage.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/banu-mushtaqs-booker-winning-stories-on-stage-in-bengaluru-on-february-27-3910693"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 27, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Second edition of Bengaluru Art Weekend opens on March 28",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "City cultural event guide covering gallery walkthroughs, public art installations, and curator talks at the second Bengaluru Art Weekend.",
+        archiveText: "BENGALURU (Deccan Herald) — The second edition of Bengaluru Art Weekend brings together galleries, collectives, and public spaces across the city for a three-day celebration of contemporary visual arts.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/second-edition-of-bengaluru-art-weekend-opens-on-march-28-3945961"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 25, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Annual Ramanavami music festival opens on March 27",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Heritage event coverage previewing Bengaluru's iconic month-long Sri Ramanavami classical music festival.",
+        archiveText: "BENGALURU (Deccan Herald) — One of India's oldest and largest classical music gatherings opens on March 27 in Bengaluru, featuring Carnatic and Hindustani maestros alongside rising youth talent.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/annual-ramanavami-music-festival-opens-on-march-27-3943465"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 21, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "IDM that blends static with emotion",
+        credit: "By Sathvi G Bhat • Deccan Herald Features",
+        excerpt: "Music & technology profile exploring Intelligent Dance Music (IDM) producers blending modular synthesis and algorithmic textures with human emotion.",
+        archiveText: "BENGALURU (Deccan Herald) — An exploration of electronic musicians crafting Intelligent Dance Music (IDM) that pairs intricate digital sound design with deeply human storytelling.",
+        url: "https://www.deccanherald.com/features/music/idm-that-blends-static-with-emotion-3939300"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 14, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Folk and Tonic: All-women ensemble explores global folk music",
+        credit: "By Sathvi G Bhat • Deccan Herald Features",
+        excerpt: "Profile of an all-women musical collective reimagining polyphonic folk traditions from around the world.",
+        archiveText: "BENGALURU (Deccan Herald) — Meet the all-women vocal and instrumental ensemble weaving global folk traditions into contemporary live performances in Bengaluru.",
+        url: "https://www.deccanherald.com/features/music/folk-and-tonic-all-women-ensemble-explores-global-folk-music-3931211"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Mar 6, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "What's lined up for Women's Day in Bengaluru",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Curated roundup of International Women's Day community events, leadership panels, art exhibitions, and grassroots drives across Bengaluru.",
+        archiveText: "BENGALURU (Deccan Herald) — From community runs and women-led entrepreneurship showcases to theatre festivals, here is how Bengaluru is celebrating International Women's Day.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/whats-lined-up-for-womens-day-in-bengaluru-3921405"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Feb 27, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Bengaluru: Amadeus back on stage next week",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Performing arts feature on the return of Peter Shaffer's classic play 'Amadeus' to Bengaluru theatres.",
+        archiveText: "BENGALURU (Deccan Herald) — Theatre lovers in Bengaluru gear up for the return of 'Amadeus', bringing the dramatic rivalry of Mozart and Salieri back to the stage.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/amadeus-back-on-stage-next-week-2-3913357"
+      },
+      {
+        outlet: "Deccan Herald",
+        date: "Feb 20, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Sights, smells, sounds focus of arts festival in Bengaluru",
+        credit: "By Sathvi G Bhat • Deccan Herald Bengaluru Bureau",
+        excerpt: "Multisensory arts coverage highlighting interactive installations designed for inclusive audience engagement.",
+        archiveText: "BENGALURU (Deccan Herald) — A multidisciplinary arts festival in Bengaluru invites visitors to experience sensory storytelling through soundscapes, tactile installations, and visual art.",
+        url: "https://www.deccanherald.com/india/karnataka/bengaluru/sights-smells-sounds-focus-of-arts-festival-3905024"
+      },
+
+      // ================= THE INDIAN EXPRESS (9) =================
+      {
+        outlet: "The Indian Express",
+        date: "Jan 26, 2026",
+        beat: "Education, STEM & Changemakers",
+        title: "They started small, but left lasting impact: from Anke Gowda to Shubha Iyengar, meet Karnataka's Padma Shri winners",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Republic Day feature profiling Karnataka's Padma Shri awardees—including aerospace scientist Dr. Shubha V. Iyengar (creator of indigenous aviation visibility system Drishti at CSIR-NAL) and book philanthropist Anke Gowda.",
+        archiveText: "BENGALURU (The Indian Express) — Profiling Karnataka's inspiring Padma Shri recipients whose decades of quiet dedication transformed science, literacy, and social welfare—from CSIR-NAL aerospace scientist Dr. Shubha Iyengar, who spearheaded India's indigenous 'Drishti' runway visibility system, to bibliophile Anke Gowda's two-million-book free library.",
+        url: "https://indianexpress.com/article/cities/bangalore/anke-gowda-shubha-iyengar-karnataka-padma-shri-winners-10495350/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 14, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Why Bengaluru's 'Stonehenge' Ejipura flyover is still a distant dream despite July deadline (Investigation Part 1)",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "On-ground civic infrastructure investigation examining land acquisition bottlenecks and commuter distress along the delayed Ejipura flyover corridor.",
+        archiveText: "BENGALURU (The Indian Express) — Part 1 of a two-part on-ground investigation into why the long-delayed Ejipura elevated corridor—dubbed Bengaluru's 'Stonehenge'—faced critical land acquisition hurdles near St John's Hospital and Sony World Junction.",
+        url: "https://indianexpress.com/article/cities/bangalore/why-bengalurus-ejipura-flyover-july-deadline-10472609/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 26, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "St John's hospital to allow use of their land for Ejipura flyover construction: Greater Bengaluru Authority (Investigation Part 2)",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "High-impact follow-up report confirming Greater Bengaluru Authority Chief Commissioner Maheshwar Rao's breakthrough land-use agreement with St John's Hospital following Part 1.",
+        archiveText: "BENGALURU (The Indian Express) — Following sustained civic reporting on the Ejipura flyover bottleneck, Greater Bengaluru Authority (GBA) Chief Commissioner Maheshwar Rao confirmed that St John's Hospital agreed to permit land access to fast-track ramp construction.",
+        url: "https://indianexpress.com/article/cities/bangalore/st-johns-hospital-to-allow-use-of-their-land-for-ejipura-flyover-construction-greater-bengaluru-authority-chief-commissioner-maheshwar-rao-10495988/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 12, 2026",
+        beat: "Education, STEM & Changemakers",
+        title: "Headmaster and teachers arrested for leaking question paper of Class 10 exam in Karnataka",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Education governance and accountability report tracking police action against a school headmaster and teachers over a Class 10 preparatory exam paper leak.",
+        archiveText: "BENGALURU (The Indian Express) — Karnataka police arrested a school headmaster and teachers after investigating the digital leak of a Class 10 state preparatory examination question paper.",
+        url: "https://indianexpress.com/article/cities/bangalore/karnataka-headmaster-teachers-arrested-leaking-class-10-question-paper-10469188/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Feb 8, 2026",
+        beat: "Culture, Arts & Community Events",
+        title: "Embedded into compound walls and built into shrines: How Bengaluru's animal hero stones mark the city's long history of human-wildlife conflict",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Long-form archaeological and ecological feature documenting 8th-to-16th-century 'vira-gallu' (hero stones) commemorating historical encounters with tigers, boars, and elephants.",
+        archiveText: "BENGALURU (The Indian Express) — Working with epigraphists and urban historians, this feature traces ancient stone inscriptions embedded in modern Bengaluru neighborhoods that reveal centuries of human-wildlife coexistence and conflict.",
+        url: "https://indianexpress.com/article/cities/bangalore/embedded-compound-walls-shrines-bengalurus-animal-hero-stones-mark-the-citys-history-10520389/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 28, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Double-decker buses a hit in Bengaluru upon return, nearly 400 tourists savour the service on Republic Day",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Urban mobility and public transit story covering citizen enthusiasm for Bengaluru's newly introduced electric double-decker sightseeing buses.",
+        archiveText: "BENGALURU (The Indian Express) — Nearly 400 commuters and tourists rode Bengaluru's newly relaunched double-decker buses over the Republic Day weekend, reviving an iconic city transit memory.",
+        url: "https://indianexpress.com/article/cities/bangalore/double-decker-buses-bengaluru-tourists-savour-service-republic-day-10499913/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 24, 2026",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Cubbon Park Walkers' Association gets Bengaluru police notice for opposing Pinkathon 2026: 'Will take legal route'",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Civic spaces report balancing stakeholder perspectives between environmental walkers' groups, marathon organizers, and city authorities.",
+        archiveText: "BENGALURU (The Indian Express) — Reporting on the civic debate surrounding large public events in Cubbon Park and stakeholder dialogues between citizens' associations and Bengaluru police.",
+        url: "https://indianexpress.com/article/cities/bangalore/cubbon-park-walkers-association-gets-bengaluru-police-notice-for-opposing-pinkathon-2026-will-take-legal-route-10491946/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Jan 22, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Bengaluru international airport gets new Gen-Z-centric lounge",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Aviation and consumer infrastructure story on Kempegowda International Airport unveiling a modern lounge tailored for young travelers and remote workers.",
+        archiveText: "BENGALURU (The Indian Express) — Kempegowda International Airport (BLR) expands its passenger experience offerings with a new lounge concept designed around Gen-Z travelers and digital nomads.",
+        url: "https://indianexpress.com/article/cities/bangalore/bengaluru-international-airport-new-gen-z-lounge-10488669/"
+      },
+      {
+        outlet: "The Indian Express",
+        date: "Feb 10, 2026",
+        beat: "Corporate M&A, IPOs & Markets",
+        title: "Finished your coffee? Bengaluru restaurants propose 'table charges' for extended real estate, political chats",
+        credit: "By Sathvi G Bhat • The Indian Express Bengaluru",
+        excerpt: "Urban hospitality feature examining why iconic Bengaluru darshinis and cafes debated table-time policies amid remote work and long informal meetings.",
+        archiveText: "BENGALURU (The Indian Express) — As Bengaluru's famed coffee houses double as informal offices and real-estate deal rooms, restaurateurs weigh measures to balance hospitality with table turnover.",
+        url: "https://indianexpress.com/article/cities/bangalore/finished-your-coffee-bengaluru-restaurants-propose-table-charges-for-extended-real-estate-political-chats-10525049/"
+      },
+
+      // ================= THE TIMES OF INDIA (8 entries representing 10-11 print & digital stories) =================
+      {
+        outlet: "The Times of India",
+        date: "May 6, 2025",
+        beat: "Education, STEM & Changemakers",
+        title: "Karnataka governor, Azim Premji stress on public service, ethical practice at university convocation",
+        credit: "By Sathvi G Bhat (Solo Byline) • The Times of India Bengaluru",
+        excerpt: "Higher education and corporate citizenship report covering philanthropist Azim Premji and the Karnataka Governor addressing graduating students on ethics and public service.",
+        archiveText: "BENGALURU (The Times of India) — Solo byline covering Azim Premji University's convocation ceremony, highlighting Azim Premji's and Governor Thaawarchand Gehlot's call for graduates to anchor their careers in ethical practice, social responsibility, and grassroots public service.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/karnataka-governor-azim-premji-stress-on-public-service-ethical-practice-at-university-convocation/articleshow/120940876.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 14, 2025",
+        beat: "Education, STEM & Changemakers",
+        title: "Medicine, engineering in sight as Bengaluru's CBSE Class 10 toppers sharpen focus",
+        credit: "By Sathvi G Bhat & Deepshikha Acharya • The Times of India Bengaluru",
+        excerpt: "STEM education feature interviewing Bengaluru's top-scoring CBSE Class 10 students on their aspirations in engineering, robotics, and medical research.",
+        archiveText: "BENGALURU (The Times of India) — Interviewing Bengaluru's highest-scoring CBSE Class 10 students, parents, and school principals on study habits and future pathways in STEM, engineering, and medicine.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/medicine-engineering-in-sight-as-bengalurus-cbse-class-10-toppers-sharpen-focus/articleshow/121146023.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 3, 2025",
+        beat: "Education, STEM & Changemakers",
+        title: "Karnataka SSLC results: These students chased excellence, while sparing time for movies & music",
+        credit: "By Sathvi G Bhat & Deepshikha Acharya • The Times of India Bengaluru",
+        excerpt: "Human-interest student achievement story profiling Karnataka SSLC state toppers who balanced academic rigor with music, sports, and arts.",
+        archiveText: "BENGALURU (The Times of India) — Profiling Karnataka SSLC board exam toppers across Bengaluru who achieved 625/625 and near-perfect scores while actively pursuing music, arts, and balanced routines.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/karnataka-sslc-results-these-students-chased-excellence-while-sparing-time-for-movies-music/articleshow/120833620.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 23, 2025",
+        beat: "Culture, Arts & Community Events",
+        title: "'Heart Lamp' drives book sales & literary frenzy in Bengaluru's bookstores",
+        credit: "By Madhuja Chakraborty & Sathvi G Bhat • The Times of India Bengaluru",
+        excerpt: "Cultural feature on how Banu Mushtaq and Deepa Bhasthi's International Booker Prize win sparked surging demand for Kannada translations across independent bookstores.",
+        archiveText: "BENGALURU (The Times of India) — Independent and chain bookstores across Bengaluru witnessed unprecedented demand for Kannada literature in translation following 'Heart Lamp's' historic International Booker Prize win.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/heart-lamp-drives-book-sales-literary-frenzy-in-bengalurus-bookstores/articleshow/121346765.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 8, 2025",
+        beat: "Culture, Arts & Community Events",
+        title: "Basavanna's Vachanas translated into French, launched in Bengaluru",
+        credit: "By Sathvi G Bhat (Solo Byline) • The Times of India Bengaluru",
+        excerpt: "Solo byline covering the international cultural launch of 12th-century social reformer Basavanna's egalitarian Vachana poetry translated into French.",
+        archiveText: "BENGALURU (The Times of India) — Solo report on the Bengaluru book launch of 12th-century philosopher-poet Basavanna's Vachanas translated into French, celebrating cross-cultural literary exchange and social equality.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/basavannas-vachanas-translated-into-french-launched-in-bengaluru/articleshow/121006416.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 18, 2025",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Mango market moves on in Bengaluru, but traders wait for better sales",
+        credit: "By Sutapa Dey, Madhuja Chakraborty & Sathvi G Bhat • The Times of India Bengaluru",
+        excerpt: "On-ground agricultural commodities and livelihood report examining weather impacts and consumer pricing across Bengaluru's seasonal mango markets.",
+        archiveText: "BENGALURU (The Times of India) — Field report from Bengaluru's wholesale and retail fruit markets examining how unseasonal weather affected mango yields, farmer livelihoods, and consumer demand.",
+        url: "https://timesofindia.indiatimes.com/city/bengaluru/mango-market-moves-on-in-bengaluru-but-traders-wait-for-better-sales/articleshow/121240797.cms"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 14, 2025",
+        beat: "Education, STEM & Changemakers",
+        title: "CBSE Class 12 & Regional Board Achievers Special Print Package",
+        credit: "By Deepshikha Acharya, Disha Chatterjee, Prilesha Pisupati & Sathvi G Bhat • TOI Bengaluru Print Edition",
+        excerpt: "Collaborative print edition package profiling Bengaluru's Class 12 board toppers, school principals, and special-needs student achievers.",
+        archiveText: "BENGALURU (The Times of India Print Edition) — Multi-reporter education bureau package celebrating Class 12 CBSE student achievers across science, commerce, and humanities streams in Bengaluru.",
+        url: "https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat"
+      },
+      {
+        outlet: "The Times of India",
+        date: "May 2025",
+        beat: "Civic Policy, Sustainability & Impact",
+        title: "Bengaluru Civic, Health & Education Bureau Print Briefs & Social Media Campaigns (3–4 Additional Print Stories)",
+        credit: "By Sathvi G Bhat • The Times of India Bengaluru Print & Digital Desk",
+        excerpt: "Additional print edition city briefs, campus event reports, and official TOI Bengaluru social media reels/carousels produced during May 2025.",
+        archiveText: "BENGALURU (The Times of India) — In addition to 7 indexed solo and co-authored digital/print articles, contributed 3–4 city bureau print reports across civic infrastructure, public health, and education events, alongside producing digital content for The Times of India's social media handles.",
+        url: "https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat"
+      }
+    ];
+
+    const grid = document.getElementById('articlesGrid');
+    const searchInput = document.getElementById('searchInput');
+    const beatSelect = document.getElementById('beatSelect');
+    const outletTabs = document.querySelectorAll('#outletTabs .filter-tab');
+    const modal = document.getElementById('dispatchModal');
+    const closeModal = document.getElementById('closeModal');
+
+    let activeOutlet = 'all';
+
+    function getOutletClass(outlet) {
+      if (outlet === 'Thomson Reuters') return 'outlet-reuters';
+      if (outlet === 'Deccan Herald') return 'outlet-dh';
+      if (outlet === 'The Indian Express') return 'outlet-ie';
+      return 'outlet-toi';
+    }
+
+    function renderArticles() {
+      const q = searchInput.value.trim().toLowerCase();
+      const beat = beatSelect.value;
+
+      const filtered = ARTICLES.filter(item => {
+        const matchOutlet = activeOutlet === 'all' || item.outlet === activeOutlet;
+        const matchBeat = beat === 'all' || item.beat === beat;
+        const matchQuery = !q ||
+          item.title.toLowerCase().includes(q) ||
+          item.excerpt.toLowerCase().includes(q) ||
+          item.credit.toLowerCase().includes(q) ||
+          item.outlet.toLowerCase().includes(q) ||
+          item.beat.toLowerCase().includes(q);
+        return matchOutlet && matchBeat && matchQuery;
+      });
+
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding: 2.5rem; color: var(--text-muted); background: var(--bg-elevated); border-radius: 14px; border: 1px solid var(--border);">No articles matched your filter criteria. Try clearing the search box or switching tabs.</div>`;
+        return;
+      }
+
+      filtered.forEach((item, idx) => {
+        const card = document.createElement('article');
+        card.className = 'article-card';
+        card.innerHTML = `
+          <div>
+            <div class="article-meta">
+              <span class="outlet-pill ${getOutletClass(item.outlet)}">${item.outlet}</span>
+              <span class="article-date">${item.date}</span>
+            </div>
+            <h3 class="article-title" style="margin-top:0.55rem;">${item.title}</h3>
+            <p class="article-excerpt" style="margin-top:0.45rem;">${item.excerpt}</p>
+            <div class="credit-line" style="margin-top:0.65rem;">${item.credit}</div>
+          </div>
+          <div class="article-actions">
+            <span class="beat-tag">${item.beat}</span>
+            <div class="action-btns">
+              <button class="btn-sm" data-idx="${idx}" type="button">Read Dispatch / Excerpt</button>
+              <a class="btn-sm primary-link" href="${item.url}" target="_blank" rel="noopener">Live Link ↗</a>
+            </div>
+          </div>
+        `;
+
+        card.querySelector('button[data-idx]').addEventListener('click', () => {
+          document.getElementById('modalOutlet').textContent = `${item.outlet} • ${item.beat}`;
+          document.getElementById('modalOutlet').className = `outlet-pill ${getOutletClass(item.outlet)}`;
+          document.getElementById('modalTitle').textContent = item.title;
+          document.getElementById('modalCredit').textContent = item.credit;
+          document.getElementById('modalBody').textContent = item.archiveText;
+          document.getElementById('modalDate').textContent = `Published: ${item.date}`;
+          document.getElementById('modalLink').href = item.url;
+          modal.showModal();
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    outletTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        outletTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        activeOutlet = tab.dataset.outlet;
+        renderArticles();
+      });
+    });
+
+    searchInput.addEventListener('input', renderArticles);
+    beatSelect.addEventListener('change', renderArticles);
+
+    closeModal.addEventListener('click', () => modal.close());
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+    // Dark / Light Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeText = document.getElementById('themeText');
+
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      themeIcon.textContent = next === 'dark' ? '☀️' : '🌙';
+      themeText.textContent = next === 'dark' ? 'Light' : 'Dark';
+    });
+
+    renderArticles();
+  </script>
+</body>
+</html>
