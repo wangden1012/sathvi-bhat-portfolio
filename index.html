@@ -7,20 +7,19 @@
   <meta name="description" content="Portfolio of Sathvi G Bhat — Trainee Correspondent at Thomson Reuters. CSR Experience, Journalism &amp; Communication Experience, and Creative Portfolio." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fbfaf8;
+      --bg: #fcf5f7;
       --card: #ffffff;
-      --subtle: #f3f1ed;
-      --text: #141413;
-      --muted: #52514e;
-      --soft: #78756f;
-      --accent: #163a5f;
-      --accent-light: #e8f0f8;
-      --creative: #7c2d12;
-      --creative-light: #ffedd5;
-      --border: #e4e1da;
+      --pink-soft: #f7e6ec;
+      --pink-mid: #f0d2dc;
+      --border: #e6c8d2;
+      --text: #2b181f;
+      --muted: #5e414b;
+      --soft: #85626e;
+      --accent: #6e2b42;
+      --accent-hover: #521d30;
       --radius: 10px;
     }
 
@@ -31,11 +30,12 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Lora', Georgia, 'Times New Roman', serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.5;
+      line-height: 1.58;
       font-size: 14.5px;
+      -webkit-font-smoothing: antialiased;
     }
 
     .wrap {
@@ -44,44 +44,57 @@
       padding: 1.75rem 1.25rem 2.5rem;
     }
 
-    /* Compact Hero + Quick Navigation Buttons */
+    .icon {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* Hero Section */
     .hero {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.5rem 1.75rem;
+      padding: 1.65rem 1.85rem;
       margin-bottom: 1.25rem;
       display: grid;
       grid-template-columns: 1.35fr 1fr;
-      gap: 1.5rem;
+      gap: 1.75rem;
       align-items: center;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
       }
     }
 
     .hero h1 {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 1.05;
-      margin-bottom: 0.3rem;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 0.35rem;
     }
 
     .role-line {
-      font-size: 0.95rem;
+      font-size: 0.96rem;
       font-weight: 600;
       color: var(--accent);
-      margin-bottom: 0.55rem;
+      margin-bottom: 0.65rem;
     }
 
     .bio {
       color: var(--muted);
       font-size: 0.9rem;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1rem;
     }
 
     .contact-strip {
@@ -91,48 +104,65 @@
       font-size: 0.82rem;
     }
 
-    .contact-strip a, .contact-strip span {
-      padding: 0.32rem 0.7rem;
-      border-radius: 6px;
-      background: var(--subtle);
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.36rem 0.75rem;
+      border-radius: 7px;
+      background: var(--pink-soft);
       color: var(--text);
       text-decoration: none;
       font-weight: 500;
       border: 1px solid var(--border);
+      transition: all 0.15s ease;
     }
 
-    .contact-strip a:hover {
+    a.contact-chip:hover {
+      background: var(--pink-mid);
       border-color: var(--accent);
       color: var(--accent);
     }
 
-    /* Right Side of Hero: Creative Portfolio & Profile Buttons */
+    /* Right Side Portfolio & Profile Box */
     .portfolios-box {
-      background: var(--subtle);
+      background: var(--pink-soft);
       border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem 1.15rem;
+      border-radius: 9px;
+      padding: 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .box-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.42rem;
     }
 
     .box-label {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       color: var(--soft);
-      margin-bottom: 0.5rem;
-      display: block;
     }
 
-    .btn-grid {
+    .btn-row-2 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 0.45rem;
-      margin-bottom: 0.85rem;
     }
 
-    @media (max-width: 480px) {
-      .btn-grid {
+    .btn-row-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.45rem;
+    }
+
+    @media (max-width: 560px) {
+      .btn-row-2, .btn-row-3 {
         grid-template-columns: 1fr;
       }
     }
@@ -141,7 +171,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.5rem 0.75rem;
+      gap: 0.5rem;
+      padding: 0.52rem 0.8rem;
       border-radius: 7px;
       background: var(--card);
       border: 1px solid var(--border);
@@ -149,29 +180,40 @@
       text-decoration: none;
       font-size: 0.82rem;
       font-weight: 600;
+      white-space: nowrap;
       transition: all 0.15s ease;
+    }
+
+    .nav-btn-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .nav-btn:hover {
       border-color: var(--accent);
-      background: var(--accent-light);
-      color: var(--accent);
+      background: var(--pink-mid);
+      color: var(--accent-hover);
       transform: translateY(-1px);
     }
 
-    .nav-btn.creative-btn {
-      background: var(--creative-light);
-      border-color: #fed7aa;
-      color: var(--creative);
-    }
-
-    .nav-btn.creative-btn:hover {
-      background: var(--creative);
+    .nav-btn.primary-portfolio {
+      background: var(--accent);
+      border-color: var(--accent);
       color: #ffffff;
-      border-color: var(--creative);
+      padding: 0.6rem 0.9rem;
+      font-size: 0.86rem;
     }
 
-    /* Two-Column Experience Grid (Less Scroll!) */
+    .nav-btn.primary-portfolio:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      color: #ffffff;
+    }
+
+    /* Two-Column Experience Grid */
     .exp-columns {
       display: grid;
       grid-template-columns: 1fr 1.25fr;
@@ -190,25 +232,24 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.25rem 1.4rem;
+      padding: 1.3rem 1.45rem;
     }
 
     .panel-title {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: 1.55rem;
-      font-weight: 400;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
       margin-bottom: 0.9rem;
-      padding-bottom: 0.45rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
 
-    .panel-title span {
-      font-family: 'Inter', sans-serif;
+    .panel-title span.sub {
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: 500;
       color: var(--soft);
     }
 
@@ -237,6 +278,7 @@
     .role-org {
       font-weight: 700;
       font-size: 0.95rem;
+      color: var(--text);
     }
 
     .role-org a {
@@ -256,23 +298,24 @@
     }
 
     .role-sub {
-      font-size: 0.82rem;
+      font-size: 0.83rem;
       font-weight: 600;
+      font-style: italic;
       color: var(--accent);
-      margin: 0.1rem 0 0.35rem;
+      margin: 0.12rem 0 0.38rem;
     }
 
     .role-bullets {
-      padding-left: 1rem;
+      padding-left: 1.05rem;
       color: var(--muted);
       font-size: 0.84rem;
     }
 
     .role-bullets li {
-      margin-bottom: 0.22rem;
+      margin-bottom: 0.24rem;
     }
 
-    /* Compact Tabbed Article Browser (Zero Endless Scroll!) */
+    /* Compact Tabbed Article Browser */
     .articles-panel {
       background: var(--card);
       border: 1px solid var(--border);
@@ -292,14 +335,15 @@
     .tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
+      gap: 0.42rem;
     }
 
     .tab {
-      padding: 0.45rem 0.85rem;
+      font-family: inherit;
+      padding: 0.44rem 0.85rem;
       border-radius: 7px;
       border: 1px solid var(--border);
-      background: var(--subtle);
+      background: var(--pink-soft);
       color: var(--muted);
       font-size: 0.82rem;
       font-weight: 600;
@@ -322,22 +366,28 @@
       padding: 0.45rem 0.8rem;
       border-radius: 7px;
       border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
       font-size: 0.83rem;
       min-width: 230px;
       font-family: inherit;
+    }
+
+    .search-box:focus {
+      outline: 1.5px solid var(--accent);
     }
 
     .articles-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
       gap: 0.65rem;
-      max-height: 460px;
+      max-height: 450px;
       overflow-y: auto;
       padding-right: 0.25rem;
     }
 
     .art-card {
-      padding: 0.75rem 0.9rem;
+      padding: 0.8rem 0.95rem;
       border: 1px solid var(--border);
       border-radius: 8px;
       background: var(--bg);
@@ -352,7 +402,7 @@
 
     .art-card:hover {
       border-color: var(--accent);
-      background: var(--card);
+      background: var(--pink-soft);
     }
 
     .art-meta {
@@ -377,7 +427,7 @@
       font-size: 0.88rem;
       font-weight: 600;
       color: var(--text);
-      line-height: 1.35;
+      line-height: 1.38;
     }
 
     .art-credit {
@@ -387,7 +437,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 0.4rem;
-      padding-top: 0.3rem;
+      padding-top: 0.35rem;
       border-top: 1px solid var(--border);
     }
 
@@ -408,7 +458,7 @@
 <body>
 
   <div class="wrap">
-    <!-- Top Hero & Quick Portfolio Buttons -->
+    <!-- Top Hero & Monochrome Pastel Pink Portfolio Links Box -->
     <header class="hero">
       <div>
         <h1>Sathvi G Bhat</h1>
@@ -417,44 +467,79 @@
           Trainee Correspondent on the Global News Monitoring desk at <strong>Thomson Reuters</strong> in Bengaluru. Hold an M.A. in Media &amp; Communication Studies (Multimedia Journalism) from CHRIST University and a B.A. in English, Psychology &amp; Journalism from Jain University, with CSR &amp; communications internships at <strong>The Titli Foundation</strong> and <strong>People For Animals</strong> and reporting internships at <strong>Deccan Herald</strong>, <strong>The Indian Express</strong>, and <strong>The Times of India</strong>.
         </p>
         <div class="contact-strip">
-          <span>📍 Bengaluru, India</span>
-          <a href="mailto:sathvigbhat@gmail.com">✉️ sathvigbhat@gmail.com</a>
-          <a href="tel:+919483040884">📞 +91 9483040884</a>
+          <span class="contact-chip">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Bengaluru, India
+          </span>
+          <a class="contact-chip" href="mailto:sathvigbhat@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            sathvigbhat@gmail.com
+          </a>
+          <a class="contact-chip" href="tel:+919483040884">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 9483040884
+          </a>
         </div>
       </div>
 
-      <!-- Clickable Buttons for Creative Portfolio (Wix) & Profiles -->
+      <!-- Right Box: Single Creative Portfolio Button, Separate Substack/Medium, and Published Profiles -->
       <div class="portfolios-box">
-        <span class="box-label">Creative Portfolio (Wix)</span>
-        <div class="btn-grid">
-          <a class="nav-btn creative-btn" href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noopener">
-            <span>🎨 Creative Portfolio Home</span> <span>↗</span>
-          </a>
-          <a class="nav-btn creative-btn" href="https://sathvigbhat.wixsite.com/artportfolio/blog" target="_blank" rel="noopener">
-            <span>🎬 Video &amp; Broadcast Work</span> <span>↗</span>
-          </a>
-          <a class="nav-btn creative-btn" href="https://sathvigbhat.wixsite.com/artportfolio/portfolio" target="_blank" rel="noopener">
-            <span>🖼️ Posters &amp; Illustrations</span> <span>↗</span>
-          </a>
-          <a class="nav-btn creative-btn" href="https://substack.com/@sathvibhat" target="_blank" rel="noopener">
-            <span>✒️ Substack Essays</span> <span>↗</span>
+        <div class="box-group">
+          <span class="box-label">Creative Portfolio</span>
+          <a class="nav-btn primary-portfolio" href="https://sathvigbhat.wixsite.com/artportfolio" target="_blank" rel="noopener">
+            <span class="nav-btn-left">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              Creative Portfolio (Wix — Video, Broadcast &amp; Art)
+            </span>
+            <span>↗</span>
           </a>
         </div>
 
-        <span class="box-label">Published Journalism Profiles</span>
-        <div class="btn-grid" style="margin-bottom:0;">
-          <a class="nav-btn" href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noopener">
-            <span>📰 Deccan Herald Profile</span> <span>↗</span>
-          </a>
-          <a class="nav-btn" href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noopener">
-            <span>🗞️ Times of India Profile</span> <span>↗</span>
-          </a>
-          <a class="nav-btn" href="https://theedgemalaysia.com/author/Sathvi%20G%20Bhat" target="_blank" rel="noopener">
-            <span>🌐 Reuters / The Edge</span> <span>↗</span>
-          </a>
-          <a class="nav-btn" href="https://medium.com/@sathvigbhat/the-charlie-kirk-paradox-baf36f9a6af3" target="_blank" rel="noopener">
-            <span>📝 Medium Column</span> <span>↗</span>
-          </a>
+        <div class="box-group">
+          <span class="box-label">Columns &amp; Essays</span>
+          <div class="btn-row-2">
+            <a class="nav-btn" href="https://substack.com/@sathvibhat" target="_blank" rel="noopener">
+              <span class="nav-btn-left">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16M4 8h16M4 12h16v8l-8-4-8 4v-8z"/></svg>
+                Substack
+              </span>
+              <span>↗</span>
+            </a>
+            <a class="nav-btn" href="https://medium.com/@sathvigbhat/the-charlie-kirk-paradox-baf36f9a6af3" target="_blank" rel="noopener">
+              <span class="nav-btn-left">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                Medium
+              </span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="box-group">
+          <span class="box-label">Published Journalism Profiles</span>
+          <div class="btn-row-3">
+            <a class="nav-btn" href="https://theorg.com/org/thomson-reuters/person/sathvi-g-bhat" target="_blank" rel="noopener">
+              <span class="nav-btn-left">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Reuters Profile
+              </span>
+              <span>↗</span>
+            </a>
+            <a class="nav-btn" href="https://www.deccanherald.com/author/sathvi-g-bhat" target="_blank" rel="noopener">
+              <span class="nav-btn-left">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z"/></svg>
+                Deccan Herald
+              </span>
+              <span>↗</span>
+            </a>
+            <a class="nav-btn" href="https://timesofindia.indiatimes.com/topic/Sathvi-G-Bhat" target="_blank" rel="noopener">
+              <span class="nav-btn-left">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                Times of India
+              </span>
+              <span>↗</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -464,7 +549,7 @@
       <!-- Left Column: CSR Experience + Education -->
       <div style="display:flex; flex-direction:column; gap:1.25rem;">
         <section class="panel">
-          <h2 class="panel-title">CSR Experience <span>NGO &amp; Campaign Work</span></h2>
+          <h2 class="panel-title">CSR Experience <span class="sub">NGO &amp; Campaign Work</span></h2>
 
           <div class="role-card">
             <div class="role-top">
@@ -492,7 +577,7 @@
         </section>
 
         <section class="panel">
-          <h2 class="panel-title">Education <span>Bengaluru</span></h2>
+          <h2 class="panel-title">Education <span class="sub">Bengaluru</span></h2>
           <div class="role-card">
             <div class="role-top">
               <div class="role-org">CHRIST (Deemed-to-be) University</div>
@@ -512,7 +597,7 @@
 
       <!-- Right Column: Journalism and Communication Experience -->
       <section class="panel">
-        <h2 class="panel-title">Journalism &amp; Communication Experience <span>50+ Published Credits</span></h2>
+        <h2 class="panel-title">Journalism &amp; Communication Experience <span class="sub">50+ Published Credits</span></h2>
 
         <div class="role-card">
           <div class="role-top">
@@ -564,8 +649,8 @@
     <!-- Compact Tabbed Directory of All 50+ Verified Articles & Creative Work -->
     <section class="articles-panel" id="articles">
       <div class="panel-title" style="margin-bottom: 0.75rem;">
-        <span>Published Articles, Wire Credits &amp; Creative Work (Click Any Card to Open)</span>
-        <span>Verified Links</span>
+        <span>Published Articles, Wire Credits &amp; Creative Work</span>
+        <span class="sub">Click Any Entry to Open</span>
       </div>
 
       <div class="toolbar">
